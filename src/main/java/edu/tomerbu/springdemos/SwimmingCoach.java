@@ -41,8 +41,8 @@ public class SwimmingCoach implements Coach {
 
     //Injected, using the qualifier if there is more than one @Component that matches the type injected.
     @Autowired
-    @Qualifier("happyFortuneService")
-    public void setFortuneTeller(FortuneTeller fortuneTeller) {
+    //@Qualifier("happyFortuneService") //sadFortuneService
+    public void setFortuneTeller(@Qualifier("happyFortuneService") FortuneTeller fortuneTeller) {
         this.fortuneTeller = fortuneTeller;
     }
 
