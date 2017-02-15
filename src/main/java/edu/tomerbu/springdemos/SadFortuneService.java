@@ -8,7 +8,7 @@ import java.util.Random;
  * Created by tomerbuzaglo on 15/02/2017.
  */
 
-@Component
+
 public class SadFortuneService implements FortuneTeller {
 
     private String[] fortunes = {
